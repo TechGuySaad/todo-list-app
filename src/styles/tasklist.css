@@ -1,0 +1,55 @@
+.task-list{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    /* row-gap: 0; */
+    height: 80%;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.task-list::-webkit-scrollbar{
+    display: none;
+}
+
+.task{
+    /* background-color: black; */
+    display: flex;
+    
+    align-items: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    height: 100px;
+    /* width: 100%; */
+    border: solid;
+    border-width: 1px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-color: rgb(243, 241, 241);
+    column-gap: 20px;
+    /* font-weight: 100; */
+}
+
+.task input{
+    -webkit-appearance: none; /* Remove default appearance */
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 50%; /* Make border radius 50% to create a circle */
+  width: 16px; /* Set width and height to desired size */
+  height: 16px;
+  border: 1px solid #ccc; /* Add border */
+  outline: none;
+}
+
+.task input:checked {
+    background-color: #994d99; /* Change background color when checked */
+  }
+
+  .task h2{
+
+    font-weight: 500;
+    letter-spacing: -1px;
+    
+  }
